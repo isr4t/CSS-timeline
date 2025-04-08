@@ -1,0 +1,98 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.portfolio-container {
+  margin-top: 100px;
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3182ce; /* Blue Accent */
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-left: 3px solid #4a5568; 
+  padding-left: 50px;
+  gap: 40px;
+  max-width: 900px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  background-color: #4a5568; 
+  padding: 20px;
+  border-radius: 20px; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.box:hover {
+  transform: translateY(-10px); 
+ 
+}
+
+.icon {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  left: -75px; 
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.box1 .icon { background-color: #3182ce; }
+.box2 .icon { background-color: #38a169; }
+.box3 .icon { background-color: #e53e3e; }
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 50px; 
+}
+
+.message-box h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #f7fafc; 
+}
+
+.message-box p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #e2e8f0; 
+}
+
+.horizontal-line {
+  width: 100%;
+  border: 1px solid #444;
+  margin: 20px 0;
+}
